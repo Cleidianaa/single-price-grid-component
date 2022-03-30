@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,700;1,400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ----  colors  ----*/
+:root{
+ --cyan: hsl(179, 62%, 43%);
+ --bright-yellow: hsl(71, 73%, 54%);
+ /* --- Neutra ---*/
+ --light-gray: hsl(204, 43%, 93%);
+ --Grayish-blue: hsl(178, 66%, 45%);
+ --white-color: hsl(240, 5%, 96%);
+ --gray--color: hsl(218, 22%, 67%);
+ 
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--light-gray);
+    font-family: "Karla", sans-serif;
+    padding: 20px;
+    margin: 0;
+    min-height: 100vh;
+}
+.container{
+    background-color: var(--white-color);
+    border-radius: 10px;
+    box-shadow: 0 5px 10px 10px var(--light-gray);
+    max-width: 800px;
+    margin: auto;
+    overflow: hidden;
+    width: 800px;
+}
+section{
+    padding: 35px;
+}
+.row{
+    display: flex;
+}
+.row section{
+    flex: 1;
+}
+.cyan{
+    background-color: var(--cyan);
+    color: var(--white-color);
+}
+.greyish{
+    background-color: var(--Grayish-blue);
+    color: var(--white-color);
+}
+h1{
+    color: var(--cyan);
+    font-size: 34px;
+}
+.text{
+    color: var(--bright-yellow);
+    display: flex;
+    align-items: center;
+}
+p{
+    font-size: 18px;
+}
+.black{
+    color: var(--gray--color);
+    margin: 7px;
+}
+p.faded{
+    color: var(--light-gray);
+    display: flex;
+    align-items: center;
+    font-size: 34px;
+}
+p.faded strong{
+    color: var(--white-color);
+    font-size: 50px;
+    margin-right: 10px;
+}
+button{
+    font-family: "Karla", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 20px 0;
+    margin-top: 15px;
+    width: 100%;
+    background-color: var(--bright-yellow);
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0 5px 10px 10px rgba(0, 0, 0, 0.05);
+    color: var(--white-color);
+
+}
+ul{
+    list-style: none;
+    padding: 0;
+    opacity: 0.7;
+}
+ul li{
+    line-height: 28px;
+}
+
+/*--- attribution ----*/
+.attribution{ 
+    padding-top: 10px;
+    font-size: 14px; 
+    text-align: center; 
+}
+.attribution a{ 
+    color: hsl(228, 45%, 44%); 
+}
+@media  (max-width: 600px){
+    .container{
+        width: 420px;
+        margin: 0 auto 1rem;
+    }
+    .row{
+        flex-direction: column;
+    
+    }
+
+}
+    
